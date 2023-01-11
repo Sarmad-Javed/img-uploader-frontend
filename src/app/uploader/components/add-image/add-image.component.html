@@ -1,0 +1,26 @@
+<mat-dialog-content>
+    <ng-container>
+        <div class="dialog-header">
+            <h2 mat-dialog-title>Add Image</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="img-placeholder">
+                <img src="../../../../assets/img-palceholder.jpg" alt="img-palceholder.jpg">
+            </div>
+            <div>
+                <input type="file" (change) = "onChooseFile($event)" >
+              
+            </div>
+        </div>
+
+
+        <mat-dialog-actions align="end">
+            <button mat-raised-button color="primary" mat-dialog-close tabindex="-1">
+                Cancel
+            </button>
+            <button mat-raised-button color="primary" (click)="onSaveImage()">
+                Save Image
+            </button>
+        </mat-dialog-actions>
+    </ng-container>
+</mat-dialog-content>

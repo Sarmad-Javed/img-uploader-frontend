@@ -1,0 +1,24 @@
+
+<ng-container>
+  <div class="img-list-header">
+    <div class="head-sr">Id.</div>
+    <div class="head-img">Image</div>
+  </div>
+  <ng-container *ngFor="let img of imgsList">
+    <div class="img-list-row">
+      <div class="row-sr">{{img.id}}</div>
+      <div class="row-img">
+        <div class="img">
+          <img [src]="img.imageUrl" alt="">
+          <div class="img-name">{{img.imageName}}</div>
+        </div>
+        <div class="actions">
+          <button mat-mini-fab color="primary" [routerLink]="['img/', img.id]">
+            <mat-icon>visibility</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</ng-container>
+  

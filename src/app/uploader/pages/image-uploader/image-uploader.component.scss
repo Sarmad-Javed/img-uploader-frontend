@@ -1,0 +1,28 @@
+.app-title {
+  background: #3f51b5;
+  display: flex;
+  color: #ffffff;
+  /* text-align: center; */
+  margin: auto;
+  height: 80px;
+  font-size: 60px;
+  padding: 34px;
+  align-items: center;
+  justify-content: space-around;
+}
+.img-list{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-evenly;
+}
+.list{
+    flex-basis: 60%;
+}
+.controls{
+    display:flex;
+    justify-content: end;
+    padding: 4px;
+}
